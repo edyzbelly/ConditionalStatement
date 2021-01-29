@@ -6,7 +6,7 @@ namespace ConditionalStatement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What grade do you expect to recieve in this course?");
+            Console.WriteLine("What grade do you expect to recieve in ISM 4300?");
 
             try
             {
@@ -68,7 +68,7 @@ namespace ConditionalStatement
             }
             catch
             {
-                Console.WriteLine("Please enter an interger.");
+                Console.WriteLine("Please enter an integer.");
             }
         }
     }
