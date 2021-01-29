@@ -11,7 +11,7 @@ namespace ConditionalStatement
             try
             {
                 string input = Console.ReadLine();
-                int grade = int..Parse(input);
+                int grade = int.Parse(input);
 
                 if((grade >= 98) && (grade <= 100))
                 {
@@ -37,6 +37,38 @@ namespace ConditionalStatement
                 {
                     Console.WriteLine("Your letter grade would be B-");
                 }
+                else if ((grade >= 78) && (grade <= 79))
+                {
+                    Console.WriteLine("Your letter grade would be C+");
+                }
+                else if ((grade >= 72) && (grade <= 77))
+                {
+                    Console.WriteLine("Your letter grade would be C");
+                }
+                else if ((grade >= 70) && (grade <= 71))
+                {
+                    Console.WriteLine("Your letter grade would be C-");
+                }
+                else if ((grade >= 68) && (grade <= 69))
+                {
+                    Console.WriteLine("Your letter grade would be D+");
+                }
+                 else if ((grade >= 62) && (grade <= 67))
+                {
+                    Console.WriteLine("Your letter grade would be D");
+                }
+                else if ((grade >= 60) && (grade <= 61))
+                {
+                    Console.WriteLine("Your letter grade would be D-");
+                }
+                else
+                {
+                    Console.WriteLine("Your letter grade would be F");
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Please enter an interger.");
             }
         }
     }
